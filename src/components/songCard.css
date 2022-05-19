@@ -1,0 +1,80 @@
+body {
+  text-align: center;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 650px;
+  height: 175px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  margin-top: 25px;
+  padding-top: 10px;
+  color: #89DAFF;
+  background-color: #2D2A32;
+}
+
+.emoji {
+  grid-area: 1 / 1 / 3 / 2;
+  font-size: 60px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+  
+.artist {
+  grid-area: 2 / 2 / 3 / 4;
+  font-size: 25px;
+  margin-bottom: auto;
+  text-transform: capitalize;
+  margin-top: auto;
+  font-weight: 700;
+}
+
+.title {
+  grid-area: 1 / 2 / 2 / 4;
+  font-size: 25px;
+  margin-bottom: auto;
+  margin-top: auto;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.bpm {
+  grid-area: 1 / 4 / 2 / 6;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 35px;
+  font-weight: 600;
+  color: #e63946;
+}
+
+.deleteBtn{
+    grid-area: 2 / 4 / 3 / 6;
+    background: none;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #e63946;
+    width: 90px;
+    margin-left: 90px;
+}
+
+.deleteBtn:hover{
+    border-color: #c5313e;
+    cursor: pointer;
+}
+
+.trashIcon{
+    font-size: 50px;
+    color: #e63946;
+}
+
+.trashIcon:hover{
+    color: #c5313e;
+}
